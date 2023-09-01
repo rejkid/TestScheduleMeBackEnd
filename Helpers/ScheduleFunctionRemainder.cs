@@ -51,6 +51,7 @@ namespace WebApi.Helpers
 
             Console.WriteLine("Checking status {0}.", DateTime.Now.ToString("h:mm:ss.fff"));
 
+            log.InfoFormat("Starting Timer reminding the function to attend. terminate: {0} ", terminate);
             do // Check if the caller requested cancellation. 
             {
 
