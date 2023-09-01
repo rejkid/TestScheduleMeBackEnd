@@ -89,7 +89,7 @@ namespace WebApi.Helpers
             {
                 // Reset the counter and signal the waiting thread.
                 _context.Dispose();
-                log.InfoFormat("Timer reminding the function to attend has exited gracefully. {0} ", "");
+                log.InfoFormat("Timer reminding the function to attend has exited gracefully. terminate = {0} ", terminate);
             }
         }
         public void Terminate()

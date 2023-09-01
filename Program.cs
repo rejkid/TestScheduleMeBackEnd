@@ -42,7 +42,8 @@ namespace WebApi
             // When autoEvent signals , dispose of the timer.
             //autoEvent.WaitOne();
             //stateTimer.Dispose();
-            Console.WriteLine("\nDestroying timer.");
+            log.Info("\nDestroying timer.");
+            log.Info("\nService exited gracefully.");
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
